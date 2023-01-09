@@ -250,6 +250,82 @@ footer{
     margin-left: -60%;
 }
 
+
+@media screen and (max-width: 1024px) {
+        /*footer style start*/
+        footer{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            height: 800px;
+        }
+        .logos{
+            display: flex;
+            flex-direction: column;
+            top: 10px;
+            position: absolute;
+        }
+        .line{
+            display: none;
+        }
+        .tarmeez{
+            height: 15px;
+        }
+        .imamu{
+            height: 50px;
+            margin-bottom: 30px;
+        }
+        .links-footer{
+            position: absolute;
+            top: 400px;
+            left: 45%;
+        }
+        .soical{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 160px;
+            left: 41%;
+        }
+        .soical span{
+            font-family: "Open Sans";
+        }
+        
+        .instagram span{
+            margin-left: 5px;
+        }
+        .lines-between{
+            width: 200px;
+            height: 3px;
+            top: 140px;
+            left: 41%;
+            position: absolute;
+        }
+        .lines-between2{
+            width: 200px;
+            height: 3px;
+            top: 370px;
+            left: 41%;
+            position: absolute;
+        }
+        .lines-between3{
+            width: 200px;
+            height: 3px;
+            top: 640px;
+            left: 41%;
+            position: absolute;
+        }
+        .twitter , .instagram , .youtube{
+            font-size: 15px;
+            margin: 16px 0px;
+            margin-left: 30px;
+        }
+        .text{
+            position: absolute;
+            bottom: 40px;
+            
+        }
+}
 @media screen and (max-width: 428px) {
     /* nav style*/
     nav a{
@@ -335,21 +411,21 @@ footer{
         width: 200px;
         height: 3px;
         top: 140px;
-        left: 25%;
+        left: 28%;
         position: absolute;
     }
     .lines-between2{
         width: 200px;
         height: 3px;
         top: 370px;
-        left: 25%;
+        left: 28%;
         position: absolute;
     }
     .lines-between3{
         width: 200px;
         height: 3px;
         top: 640px;
-        left: 25%;
+        left: 28%;
         position: absolute;
     }
     .twitter , .instagram , .youtube{
@@ -364,79 +440,4 @@ footer{
     }
 
     /*footer style end*/
-}
-@media screen and (max-width: 1024px) {
-        /*footer style start*/
-        footer{
-            display: flex;
-            flex-direction: row;
-            position: relative;
-            height: 800px;
-        }
-        .logos{
-            display: flex;
-            flex-direction: column;
-            top: 10px;
-            position: absolute;
-        }
-        .line{
-            display: none;
-        }
-        .tarmeez{
-            height: 15px;
-        }
-        .imamu{
-            height: 50px;
-            margin-bottom: 30px;
-        }
-        .links-footer{
-            position: absolute;
-            top: 400px;
-            left: 45%;
-        }
-        .soical{
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 160px;
-            left: 41%;
-        }
-        .soical span{
-            font-family: "Open Sans";
-        }
-        
-        .instagram span{
-            margin-left: 5px;
-        }
-        .lines-between{
-            width: 200px;
-            height: 3px;
-            top: 140px;
-            left: 41%;
-            position: absolute;
-        }
-        .lines-between2{
-            width: 200px;
-            height: 3px;
-            top: 370px;
-            left: 41%;
-            position: absolute;
-        }
-        .lines-between3{
-            width: 200px;
-            height: 3px;
-            top: 640px;
-            left: 41%;
-            position: absolute;
-        }
-        .twitter , .instagram , .youtube{
-            font-size: 15px;
-            margin: 16px 0px;
-            margin-left: 30px;
-        }
-        .text{
-            position: absolute;
-            bottom: 40px;
-            
-        }
 }
