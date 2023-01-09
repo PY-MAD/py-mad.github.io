@@ -17,7 +17,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: 0.3s;
 }
 nav a{
     text-decoration: none;
@@ -25,10 +24,17 @@ nav a{
     margin-right: 20px;
     font-size: 20px;
     font-weight: 600;
+    transition: 0.3s;
+
+}
+nav a:hover{
+    color: #1A1A1A;
+}
+.home a{
     transform: scale(0.9);
     transition: 0.3s ease-in-out transform;
 }
-.links a:hover{
+.home a:hover{
     transform: scale(1);
 }
 .logo{
