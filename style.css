@@ -263,7 +263,7 @@ footer{
 #radio4:checked ~ .frist{
     margin-left: -60%;
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1500px){
     .text{
         font-size: 16px;
     }
