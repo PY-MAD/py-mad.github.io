@@ -66,6 +66,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     margin-top: 120px;
+    margin-bottom: 120px;
 }
 .forms-join{
     background-color: #0599F2;
@@ -109,6 +110,17 @@ nav a:hover{
     background-color: #0071B2;
     border: 0;
     border-radius: 3px;
+    
+}
+.phone-number input[type="tel"]{
+    width: 100%;
+}
+.other input[type="text"]{
+    height: 30px;
+    width: 130px;
+}
+.other ::placeholder{
+    color: rgba(255, 255, 255, 0.631);
 }
 .name , .level , .major , .talk-about-your-self{
     display: flex;
@@ -149,5 +161,176 @@ nav a:hover{
     max-width: 95%;
 }
 .phone-number{
-    
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+.phone-number input[type=tel]{
+    height: 30px;
+}
+.phone-number ::placeholder{
+    color: rgba(255, 255, 255, 0.631);
+}
+.sugg{
+    margin-top: 30px;
+    width: 100%;
+}
+.sugg label{
+    font-weight: bold;
+}
+.sugg p{
+    margin-top: 10px;
+    font-size: 12px;
+    max-width: 95%;
+}
+.sugg input[type="text"]{
+    width: 100%;
+    height: 30px;
+}
+.major , .level , .talk-about-your-self{
+    margin-top: 30px;
+}
+.name label , .major label , .level label{
+    font-weight: bold;
+}
+.name input[type="text"], .major input[type="text"], .level input[type="number"]{
+    height: 30px;
+
+}
+
+.button-send{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.send{
+    height: 32px;
+    width: 120px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: #0071B2;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Noto kufi arabic";
+    margin-left: 5%;
+}
+.reset{
+    height: 32px;
+    width: 120px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: #f9690e;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Noto kufi arabic";
+}
+input[type=text]:focus {
+    border: 2px solid rgba(255, 255, 255, 0.534);
+  }
+input{
+    border: 0px;
+    border-radius: 0px;
+    outline: none;
+}
+
+
+
+
+
+footer{
+    background-color: #0597f2;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logos{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.line{
+    width: 2px;
+    height: 70px;
+    background-color: white;
+    margin: 0px 20px;
+    margin-top: auto;
+}
+.lines-between{
+    width: 3px;
+    height: 140px;
+    background-color: white;
+    position: absolute;
+    left: 320px;
+}
+.soical{
+    color: white;
+    display: flex;
+    direction: ltr;
+    position: absolute;
+    left: 400px;
+    font-family: "Open Sans";
+}
+.twitter , .instagram , .youtube{
+    margin-left: 20px;
+    font-size: 25px;
+}
+.fa-brands{
+    font-size: 30px;
+}
+.lines-between2{
+    width: 3px;
+    height: 140px;
+    background-color: white;
+    position: absolute;
+    left: 1132px;
+}
+.links-footer a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 0px;
+}
+.links-footer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    left: 1200px;
+    text-align: center;
+
+
+}
+.links-footer h1{
+    margin: 0px;
+}
+.links-footer a{
+    transition: 0.2s;
+}
+.links-footer a:hover{
+    color: #1A1A1A;
+}
+.lines-between3{
+    width: 3px;
+    height: 140px;
+    background-color: white;
+    position: absolute;
+    left: 1400px;
+}
+.text{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-right: 20px;
+    font-size: 20px;
 }

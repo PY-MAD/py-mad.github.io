@@ -33,22 +33,22 @@
         </div>
     </nav>
     <section id="sign">
-    <form class="forms-join" action="">
+    <form class="forms-join" action="sdas.php" >
         <div class="name">
             <label for="name">أسم المبدع خلف الشاشة ؟</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
         </div>
         <div class="major">
             <label for="major">تخصصك الجامعي ؟</label>
-            <input type="text" name="major" id="major">
+            <input type="text" name="major" id="major" required>
         </div>
         <div class="level">
             <label for="level">مستواك ؟</label>
-            <input type="number" name="level" id="level">
+            <input type="number" name="level" id="level" min="1" max="10" required>
         </div>
         <div class="talk-about-your-self">
             <label for="talk">تحدث عن خبرتك في مهارات انت فنان فيها ؟</label>
-            <input type="text" name="talk" id="talk" placeholder="مثلًا : التصوير ، المونتاج ...">
+            <input type="text" name="talk" id="talk" placeholder="مثلًا : التصوير ، المونتاج ..." required>
         </div>
         <div class="experince">
             <div class="java">
@@ -84,25 +84,63 @@
             <div class="other">
                 <input type="checkbox" name="other" id="other">
                 <label for="other">اخرى:</label>
-                <input type="text" name="other" id="other">
+                <input type="text" name="other" id="other" placeholder="java...">
             </div>
         </div>
         <div class="info">
             <label for="info">ممكن تشاركنا معلومات عن خبرتك البرمجية ؟</label>
             <p>في حال كان عندك خبرة في احد اللغات الي حددتها او مشاريع سويتها اكتب لنا عنها</p>
-            <input type="text" name="info" id="info">
+            <input type="text" name="info" id="info" required>
         </div>
         <div class="phone-number">
             <label for="phone">رقم جوالك ؟</label>
-            <input type="tel" name="phone" id="phone">
+            <input type="tel" name="phone" id="phone" maxlength="13" placeholder="تقدر تحط +966 او 05..." required inputmode="tel">
         </div>
         <div class="sugg">
             <label for="sugg">أي اضافات او اقتراحات للنادي ؟</label>
             <p>ودنا انك تساعد في تطورنا وتكتب لنا اقتراحاتك حتى تكون بدايتنا قوية</p>
             <input type="text" name="sugg" id="sugg">
         </div>
-        <input type="button" value="إرسال">
+        <div class="button-send">
+            <input class="send" type="submit" value="إرسال">
+            <input class="reset" type="reset" value=" حذف">
+        </div>
     </form>
 </section>
+<footer>
+    <div class="logos">
+        <img class="imamu" src="images/Imam_Logo_white.png" alt="logo imamu" height="80px">
+        <div class="line"></div>
+        <img class="tarmeez" src="images/tarmeez_logo_white.png" alt="" height=20px>
+    </div>
+    <div class="lines-between"></div>
+    <div class="soical">
+        <div class="twitter">
+            <i class="fa-brands fa-twitter"></i>
+            <span>@tarmeezClub</span>
+        </div>
+        <div class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+            <span>@tarmeezClub</span>
+        </div>
+        <div class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span>@tarmeezClub</span>
+        </div>
+    </div>
+    <div class="lines-between2"></div>
+    <div class="links-footer">
+        <h1>عن ترميز</h1>
+        <a href="#">الرئيسية</a>
+        <a href="#">منشوراتنا</a>
+        <a href="us.html">نحن</a>
+        <a href="#">انضم لنا</a>
+    </div>
+    <div class="lines-between3"></div>
+    <div class="text">
+        <div >ترميز</div>
+        <div>نادي محفوف بالشغف والإبداع...</div>
+    </div>
+</footer>
 </body>
 </html>
