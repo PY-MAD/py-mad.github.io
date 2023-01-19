@@ -151,3 +151,200 @@ nav a:hover{
 .phone-number{
     
 }
+
+@media screen and (max-width: 1700px){
+    .text{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+        /*footer style start*/
+        footer{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            height: 800px;
+        }
+        .logos{
+            display: flex;
+            flex-direction: column;
+            top: 10px;
+            position: absolute;
+        }
+        .line{
+            display: none;
+        }
+        .tarmeez{
+            height: 15px;
+        }
+        .imamu{
+            height: 50px;
+            margin-bottom: 30px;
+        }
+        .links-footer{
+            position: absolute;
+            top: 400px;
+            left: 45%;
+        }
+        .soical{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 160px;
+            left: 41%;
+        }
+        .soical span{
+            font-family: "Open Sans";
+        }
+        
+        .instagram span{
+            margin-left: 5px;
+        }
+        .lines-between{
+            width: 200px;
+            height: 3px;
+            top: 140px;
+            left: 41%;
+            position: absolute;
+        }
+        .lines-between2{
+            width: 200px;
+            height: 3px;
+            top: 370px;
+            left: 41%;
+            position: absolute;
+        }
+        .lines-between3{
+            width: 200px;
+            height: 3px;
+            top: 640px;
+            left: 41%;
+            position: absolute;
+        }
+        .twitter , .instagram , .youtube{
+            font-size: 15px;
+            margin: 16px 0px;
+            margin-left: 30px;
+        }
+        .text{
+            position: absolute;
+            bottom: 40px;
+            
+        }
+}
+@media screen and (max-width: 428px) {
+    /* nav style*/
+    nav a{
+        font-size: 16px;
+    }
+    .logo{
+        display: none;
+    }
+    .button a{
+        padding: 0px 10px;
+    }
+    /* nav style end*/
+    /* start style slider image*/
+
+    .slide img{
+        height: 100%;
+        width: 100%;
+    }
+    /* end style slider image*/
+    /* start style middle*/
+
+    #pragraph{
+        padding-bottom: 80px;
+        margin: 0px;
+    }
+    .content-text{
+        margin-top: 0px;
+    }
+    /* end style middle*/
+    /* start style list*/
+    #list li{
+        font-size: 15px;
+        margin-right: 15px;
+    }
+    #list h1{
+        margin-top: 0px;
+    }
+    /* end style list*/
+    /*footer style start*/
+    footer{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        height: 800px;
+    }
+    .logos{
+        display: flex;
+        flex-direction: column;
+        top: 10px;
+        position: absolute;
+    }
+    .line{
+        display: none;
+    }
+    .tarmeez{
+        height: 15px;
+    }
+    .imamu{
+        height: 50px;
+        margin-bottom: 30px;
+    }
+    .links-footer{
+        position: absolute;
+        top: 400px;
+        left: 33%;
+    }
+    .soical{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 160px;
+        left: 25%;
+
+    }
+    .soical span{
+        font-family: "Open Sans";
+    }
+    
+    .instagram span{
+        margin-left: 5px;
+    }
+    .lines-between{
+        width: 200px;
+        height: 3px;
+        top: 140px;
+        left: 28%;
+        position: absolute;
+    }
+    .lines-between2{
+        width: 200px;
+        height: 3px;
+        top: 370px;
+        left: 28%;
+        position: absolute;
+    }
+    .lines-between3{
+        width: 200px;
+        height: 3px;
+        top: 640px;
+        left: 28%;
+        position: absolute;
+    }
+    .twitter , .instagram , .youtube{
+        font-size: 15px;
+        margin: 16px 0px;
+        margin-left: 30px;
+    }
+    .text{
+        position: absolute;
+        bottom: 40px;
+        
+    }
+
+    /*footer style end*/
+}
