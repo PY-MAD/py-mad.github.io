@@ -199,9 +199,9 @@ label .major , .level , .talk-about-your-self, .info , .phone-number, .sugg{
     margin-left: 20px;
     border: 0;
     border-radius: 3px;
-    height: 30px;
     background-color: #0071B2;
     color: white;
+    border: 0.5px solid #0071B2;
 }
 .reset{
     font-family: "Noto kufi Arabic";
@@ -210,8 +210,8 @@ label .major , .level , .talk-about-your-self, .info , .phone-number, .sugg{
     margin-left: 20px;
     border: 0;
     border-radius: 3px;
-    height: 30px;
-    background-color: #f9690e;
+    background-color: #cc4f01;
+    border: 0.5px solid #cc4f01;
     color: white;
 }
 .send:hover{
@@ -221,6 +221,9 @@ label .major , .level , .talk-about-your-self, .info , .phone-number, .sugg{
 .reset:hover{
     background-color: #cc4f01;
     border: 0.5px solid white;
+}
+.phone-number ::placeholder{
+    color: rgba(255, 255, 255, 0.631);
 }
 footer{
     background-color: #0597f2;
