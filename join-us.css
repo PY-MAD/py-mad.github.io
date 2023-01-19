@@ -65,7 +65,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin: 120px 0px;
 }
 .forms-join{
     background-color: #0599F2;
@@ -76,6 +76,20 @@ nav a:hover{
     border-radius: 30px;
     padding: 18px 20px;
     max-width: 600px;
+}
+.name{
+}
+.major , .level , .talk-about-your-self, .info , .phone-number, .sugg{
+    margin-top: 30px;
+}
+label .major , .level , .talk-about-your-self, .info , .phone-number, .sugg{
+    font-weight: bold;
+}
+.level input[type="number"], .major input[type="text"], .name input[type="text"],.phone-number input[type="tel"] {
+    height: 30px;
+}
+.other input[type="text"]{
+    height: 30px;
 }
 .talk-about-your-self ::placeholder{
     position: absolute;
@@ -110,7 +124,7 @@ nav a:hover{
     border: 0;
     border-radius: 3px;
 }
-.name , .level , .major , .talk-about-your-self{
+.name , .level , .major , .talk-about-your-self, .phone-number{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -146,10 +160,140 @@ nav a:hover{
 .info p{
     margin-top: 10px;
     font-size: 12px;
-    max-width: 95%;
+    max-width: 80%;
 }
-.phone-number{
-    
+.info{
+    width: 100%;
+}
+.sugg{
+    width: 100%;
+}
+.sugg input[type="text"]{
+    width: 100%;
+    height: 30px;
+}
+
+.button-send{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.send{
+    font-family: "Noto kufi Arabic";
+    font-size: 16px;
+    width: 120px;
+    margin-left: 20px;
+    border: 0;
+    border-radius: 3px;
+    height: 30px;
+    background-color: #0071B2;
+    color: white;
+}
+.reset{
+    font-family: "Noto kufi Arabic";
+    font-size: 16px;
+    width: 120px;
+    margin-left: 20px;
+    border: 0;
+    border-radius: 3px;
+    height: 30px;
+    background-color: #f9690e;
+    color: white;
+}
+
+footer{
+    background-color: #0597f2;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logos{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.line{
+    width: 2px;
+    height: 70px;
+    background-color: white;
+    margin: 0px 20px;
+    margin-top: auto;
+}
+.lines-between{
+    width: 3px;
+    height: 140px;
+    background-color: white;
+    position: absolute;
+    left: 320px;
+}
+.soical{
+    color: white;
+    display: flex;
+    direction: ltr;
+    position: absolute;
+    left: 400px;
+    font-family: "Open Sans";
+}
+.twitter , .instagram , .youtube{
+    margin-left: 20px;
+    font-size: 25px;
+}
+.fa-brands{
+    font-size: 30px;
+}
+.lines-between2{
+    width: 3px;
+    height: 140px;
+    background-color: white;
+    position: absolute;
+    left: 1132px;
+}
+.links-footer a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 0px;
+}
+.links-footer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    left: 1200px;
+    text-align: center;
+
+
+}
+.links-footer h1{
+    margin: 0px;
+}
+.links-footer a{
+    transition: 0.2s;
+}
+.links-footer a:hover{
+    color: #1A1A1A;
+}
+.lines-between3{
+    width: 3px;
+    height: 140px;
+    background-color: white;
+    position: absolute;
+    left: 1400px;
+}
+.text{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-right: 20px;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 1700px){
