@@ -16,7 +16,7 @@
     </nav>
     <section>
         <div class="background">
-            <form action="https://sheetdb.io/api/v1/eb1q71zayt13j" method="post">
+            <form class="myForm" action="https://sheetdb.io/api/v1/eb1q71zayt13j" method="post">
                 <div class="name">
                     <label for="">اسمك</label>
                     <input type="text" name="data[name]" id="name" >
@@ -101,7 +101,7 @@
                     </div>
                     <div class="shef-photos">
                         <label for="">أذا كنت شيف او مصور أرفق الصور او المقاطع</label>
-                        <input type="file" name="shef-photos" id="" accept="image/* , video/*" value=onchangeURL(this)>
+                        <input type="file" name="shef-photos" id="file" accept="image/* , video/*" value=onchangeURL(this)>
                     </div>
                 </div>
                 <button type="submit">ارسل</button>
@@ -144,7 +144,7 @@
           myfile.name = file.name
           console.log(myfile)
       };
-     ('#file').change(function(){
+     $('#file').change(function(){
        file = $('#file')[0].files[0]
         reader.readAsDataURL(file);
      })
