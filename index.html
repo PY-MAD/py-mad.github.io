@@ -8,109 +8,111 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <title>Candira | تقييم</title>
+    <title>Candira | jobs</title>
 </head>
 <body>
     <nav>
-        <a href="#"><img src="img/logo.png" alt=""></a>
+        <a href="#"><img src="imgs/logo.png" alt=""></a>
     </nav>
+    <section>
+        <div class="background">
+            <form action="https://sheetdb.io/api/v1/eb1q71zayt13j" method="post">
+                <div class="name">
+                    <label for="">اسمك</label>
+                    <input type="text" name="data[name]" id="name">
+                </div>
+                <div class="age">
+                    <label for="age">العمر</label>
+                    <input type="number" name="data[age]" id="age" min="18" >
+                </div>
+                <div class="graduate">
+                    <label for="graduate">المؤهل التعليمي</label>
+                    <select class="dorp" name="data[graduate]" id="graduate" >
+                        <option value="ثانوي" >ثانوي</option>
+                        <option value="ثانوي">دبلوم</option>
+                        <option value="ثانوي">جامعي</option>
+                    </select>
+                </div>
+                <div class="now">
+                    <div class="title">
+                        <label for="">هل انت ؟</label>
+                    </div>
+                    <div class="content">
+                        <div class="student">
+                            <input type="radio" name="data[select]" id="" >
+                            <label for="">طالب</label>
+                        </div>
+                        <div class="new-graduate">
+                            <input type="radio" name="data[select]" id="" >
+                            <label for="">حديث تخرج</label>
+                        </div>
+                        <div class="graduate-radio">
+                            <input type="radio" name="data[select]" id="" >
+                            <label for="">خريج</label>
+                        </div>
+                        <div class="have-job">
+                            <input type="radio" name="data[select]" id="" >
+                            <label for="">على رأس عمل</label>
+                        </div>
+                        <div class="have-exp">
+                            <input type="radio" name="data[select]" id="" >
+                            <label for="">ذو خبره</label>
+                        </div>
+                    </div>
 
-        <section >
-            <form class="ser" action="https://sheetdb.io/api/v1/cfh497j7zs0gv" method="post" id="sheetdb-form">
-                <input id="dt" type="datetime-local" name="data[date-time]" hidden>
-                <div class="sec">
-                    <label class="title" for="num">رضاكم عن منتجاتنا</label>
-                    <div class="input" aria-required="true">
-                        <div class="one">
-                            <input class="small" type="radio" name="data[num]" id="1" value="1" required> 
-    
+                </div>
+                <div class="details">
+                    <div class="have-jobs">
+                        <label for="">إذا كنت على رأس عمل  ماهي الشركة التي تعمل لديها</label>
+                        <input type="text" name="data[have-job]" id="" >
+                    </div>
+                    <div class="name-job">
+                        <label for="">المسمى الوظيفي</label>
+                        <input type="text" name="data[name-job]" id="" >
+                    </div>
+                    <div class="years-of-exp">
+                        <label for="">عدد سنوات الخبرة</label>
+                        <input type="number" min="0" name="data[years-of-exp]" id="" >
+                    </div>
+                    <div class="hospital">
+                        <label for="">هل يوجد لديك شهادة صحية </label>
+                        <div class="yes">
+                            <input type="radio" name="data[hospital]" id="" value="نعم" >
+                            <label for="">نعم</label>
                         </div>
-                        <div class="two">
-                            <input class="tow" type="radio" name="data[num]" id="2" value="2" required>
-    
+                        <div class="no">
+                            <input type="radio" name="data[hospital]" id="" value="لا" >
+                            <label for="">لا</label>
                         </div>
-                        <div class="three">
-                            <input class="midle" type="radio" name="data[num]" id="3" value="3" required>
-    
-                        </div>
-                        <div class="fore">
-                            <input class="big" type="radio" name="data[num]" id="4" value="4" required>
-                        </div>
-                        <div class="five">
-                            <input class="biger" type="radio" name="data[num]" id="5" value="5" required>
-                        </div>
-    
                     </div>
                 </div>
-                <div class="sec">
-                    <label class="title" for="">رضاكم عن خدمتنا</label>
-                    <div class="input" aria-required="true">
-                        <div class="one">
-                            <input class="small" type="radio" name="data[num1]" id="1" value="1" required> 
-    
-                        </div>
-                        <div class="two">
-                            <input class="tow" type="radio" name="data[num1]" id="2" value="2" required>
-    
-                        </div>
-                        <div class="three">
-                            <input class="midle" type="radio" name="data[num1]" id="3" value="3" required>
-    
-                        </div>
-                        <div class="fore">
-                            <input class="big" type="radio" name="data[num1]" id="4" value="4" required>
-                        </div>
-                        <div class="five">
-                            <input class="biger" type="radio" name="data[num1]" id="5" value="5" required>
-                        </div>
-    
+                <div class="drop">
+                    <div class="cv">
+                        <label for="">يجب ارفاق السيرة الذاتية</label>
+                        <input type="file" name="cv" id="" accept=".pdf" >
+                    </div>
+                    <div class="another">
+                        <label for="">المؤهل التعليمي</label>
+                        <input type="file" name="another" id="" accept="image/* , .pdf" >
+                    </div>
+                    <div class="courses">
+                        <label for="">دورات ان وجدت</label>
+                        <input type="file" name="courses" id="" accept="image/* , .pdf" >
+                    </div>
+                    <div class="shef-photos">
+                        <label for="">أذا كنت شيف او مصور أرفق الصور او المقاطع</label>
+                        <input type="file" name="shef-photos" id="" accept="image/* , video/*" value="data[shef-photos]">
                     </div>
                 </div>
-                <div class="sec">
-                    <label class="title" for="">نسبة انك تجينا مرة ثانية</label>
-                    <div class="input" aria-required="true">
-                        <div class="one">
-                            <input class="small" type="radio" name="data[num3]" id="1" value="1" required> 
-    
-                        </div>
-                        <div class="two">
-                            <input class="tow" type="radio" name="data[num3]" id="2" value="2" required>
-    
-                        </div>
-                        <div class="three">
-                            <input class="midle" type="radio" name="data[num3]" id="3" value="3" required>
-                        </div>
-                        <div class="fore">
-                            <input class="big" type="radio" name="data[num3]" id="4" value="4" required>
-                        </div>
-                        <div class="five">
-                            <input class="biger" type="radio" name="data[num3]" id="5" value="5" required>
-                        </div>
-    
-                    </div>
+                <div class="button">
+                    <button type="submit">ارسل</button>
                 </div>
-                <button type="submit">أرسل</button>
+
             </form>
-        </section>
-        <script>
-            var now = new Date();
-            now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
-            document.getElementById('dt').value = now.toISOString().slice(0,16);
-        </script>
-    <script>
-        var form = document.getElementById('sheetdb-form');
-    form.addEventListener("submit", e=> {
-        e.preventDefault();
-        fetch(form.action, {
-            method : "POST",
-            body: new FormData(document.getElementById("sheetdb-form")),
-        }).then(
-                response => response.json()
-        ).then((html) => {
-            window.location.replace('done.html');
-        });
-    });
-    </script>
-    
+        </div>
+    </section>
+
+
+	
 </body>
 </html>

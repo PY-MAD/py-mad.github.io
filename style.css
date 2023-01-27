@@ -6,7 +6,7 @@
 }
 body{
     background-color: white;
-    background-image: url("img/Asset 2.png");
+    background-image: url("imgs/Asset 2.png");
     background-repeat: no-repeat;
     background-position: bottom;
     accent-color: #8E0E42;
@@ -27,256 +27,157 @@ section{
     width: 100%;
     height: 100%;
     margin-bottom: 50px;
+
 }
-.input{
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 30%;
+    border-radius: 20px;
+    margin: 60px auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    padding: 20px 0px;
+}
+form{
+    width: 90%;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.name , .age{
+    display: flex;
+    flex-direction: column;
+
+}
+input[type="text"]{
+    height: 32px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #cdcdcd;
+    color: white;
+    padding-right: 10px;
+}
+input[type="number"]{
+    text-align: center;
+    height: 32px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #cdcdcd;
+    color: white;
+    font-weight: bold;
+}
+select{
+    color: black;
+    font-weight: bold;
+}
+option{
+    color: black;
+    font-weight: bold;
+}
+.graduate{
+    display: flex;
+    flex-direction: column;
+}
+.now{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.content{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: self-end;
+    
 }
-.sec{
+.student , .new-graduate, .graduate-radio , .have-job , .have-exp{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.details{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding: 30px;
-
 }
-.ser{
-    position: relative;
+.have-jobs , .name-job , .years-of-exp{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    width: 25%;
-    margin: 120px auto;
-    padding: 50px 0px;
-    border-radius: 30px;
 }
-.biger {
-
-    /* The native appearance is hidden */
-    appearance: none;
-    -webkit-appearance: none;
-  
-    /* For a circular appearance we need a border-radius. */
-    border-radius: 50%;
-  
-    /* The background will be the radio dot's color. */
-    background: #FF572233;
-  
-    /* The border will be the spacing between the dot and the outer circle */
-    border: 17px solid #FFF;
-  
-    /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-    box-shadow: 0 0px 0px 3px #8E0E42;
-  }
-  .big{
-        /* The native appearance is hidden */
-        appearance: none;
-        -webkit-appearance: none;
-      
-        /* For a circular appearance we need a border-radius. */
-        border-radius: 50%;
-      
-        /* The background will be the radio dot's color. */
-        background: #FF572233;
-      
-        /* The border will be the spacing between the dot and the outer circle */
-        border: 14px solid #FFF;
-      
-        /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-        box-shadow: 0 0px 0px 3px #8E0E42;
-  }
-  .midle{
-            /* The native appearance is hidden */
-            appearance: none;
-            -webkit-appearance: none;
-          
-            /* For a circular appearance we need a border-radius. */
-            border-radius: 50%;
-          
-            /* The background will be the radio dot's color. */
-            background: #FF572233;
-          
-            /* The border will be the spacing between the dot and the outer circle */
-            border: 11px solid #FFF;
-          
-            /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-            box-shadow: 0 0px 0px 3px #8E0E42;
-  }
-  .tow{
-                /* The native appearance is hidden */
-                appearance: none;
-                -webkit-appearance: none;
-              
-                /* For a circular appearance we need a border-radius. */
-                border-radius: 50%;
-              
-                /* The background will be the radio dot's color. */
-                background: #FF572233;
-              
-                /* The border will be the spacing between the dot and the outer circle */
-                border: 8px solid #FFF;
-              
-                /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-                box-shadow: 0 0px 0px 3px #8E0E42;
-  }
-  .small{
-                    /* The native appearance is hidden */
-                    appearance: none;
-                    -webkit-appearance: none;
-                  
-                    /* For a circular appearance we need a border-radius. */
-                    border-radius: 50%;
-                  
-                    /* The background will be the radio dot's color. */
-                    background: #FF572233;
-                  
-                    /* The border will be the spacing between the dot and the outer circle */
-                    border: 5px solid #FFF;
-                  
-                    /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-                    box-shadow: 0 0px 0px 3px #8E0E42;
-  }
-.small:checked{
-                        /* The native appearance is hidden */
-                        appearance: none;
-                        -webkit-appearance: none;
-                      
-                        /* For a circular appearance we need a border-radius. */
-                        border-radius: 50%;
-                      
-                        /* The background will be the radio dot's color. */
-                        background: #FF572233;
-                      
-                        /* The border will be the spacing between the dot and the outer circle */
-                        border: 5px solid #8E0E42;
-                      
-                        /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-                        box-shadow: 0 0px 0px 3px #8E0E42;
-}
-.tow:checked{
-                            /* The native appearance is hidden */
-                            appearance: none;
-                            -webkit-appearance: none;
-                          
-                            /* For a circular appearance we need a border-radius. */
-                            border-radius: 50%;
-                          
-                            /* The background will be the radio dot's color. */
-                            background: #FF572233;
-                          
-                            /* The border will be the spacing between the dot and the outer circle */
-                            border: 8px solid #8E0E42;
-                          
-                            /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-                            box-shadow: 0 0px 0px 3px #8E0E42;
-}
-.midle:checked{
-                                /* The native appearance is hidden */
-                                appearance: none;
-                                -webkit-appearance: none;
-                              
-                                /* For a circular appearance we need a border-radius. */
-                                border-radius: 50%;
-                              
-                                /* The background will be the radio dot's color. */
-                                background: #FF572233;
-                              
-                                /* The border will be the spacing between the dot and the outer circle */
-                                border: 11px solid #8E0E42;
-                              
-                                /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-                                box-shadow: 0 0px 0px 3px #8E0E42;
-}
-.big:checked{
-                                    /* The native appearance is hidden */
-                                    appearance: none;
-                                    -webkit-appearance: none;
-                                  
-                                    /* For a circular appearance we need a border-radius. */
-                                    border-radius: 50%;
-                                  
-                                    /* The background will be the radio dot's color. */
-                                    background: #FF572233;
-                                  
-                                    /* The border will be the spacing between the dot and the outer circle */
-                                    border: 14px solid #8E0E42;
-                                  
-                                    /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-                                    box-shadow: 0 0px 0px 3px #8E0E42;
-}
-.biger:checked{
-    /* The native appearance is hidden */
-    appearance: none;
-    -webkit-appearance: none;
-  
-    /* For a circular appearance we need a border-radius. */
-    border-radius: 50%;
-  
-    /* The background will be the radio dot's color. */
-    background: #FF572233;
-  
-    /* The border will be the spacing between the dot and the outer circle */
-    border: 17px solid #8E0E42;
-  
-    /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-    box-shadow: 0 0px 0px 3px #8E0E42;
+.cv ,.another , .courses ,.shef-photo{
+    display: flex;
+    flex-direction: column;
 }
 
-.title{
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 20px;
+.name , .age , .graduate , .details , .drop , .hospital{
+    margin: 20px 0px;
 }
 input{
-    margin-left: 30px;
+    font-weight: bold;
 }
-.input{
-    padding-right: 50px;
+.now input{
+    margin-left: 10px;
 }
-.one div , .two div , .three div , .fore div , .five span{
-}
-.one , .two , .three , .fore , .five{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.ser{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-}
-
 button{
-    height: 42px;
-    width: 144px;
-    border: 0;
-    border-radius: 10px;
+
     background-color: #8E0E42;
-    color: white;
-    font-size: 20px;
-    transition: 0.5s;
-    border: 1px solid #8E0E42;
+    border: 0;
+    height: 44px;
+    width: 100px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1.5px #8E0E42 solid;
+    font-size: 16px;
+    font-weight: 500;
 }
 button:hover{
+    background-color: white;
     color: #8E0E42;
-    background-color: #fcfcfc;
-    border: 1px solid #8E0E42;
-
 }
-
-@media screen and (max-width : 1024px) {
-    .ser{
-        width: 50%;
-        margin: 70px auto;
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@media screen and (max-width: 428px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .student , .new-graduate, .graduate-radio , .have-job , .have-exp{
+        margin-bottom: 5px;
+    }
+    .background{
+        width: 80%;
+    }
+    .title{
+        margin-bottom: 20px;
     }
 }
-@media screen and (max-width : 375px) {
-    .ser{
-        width: 100%;
+@media screen and (max-width: 750px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .student , .new-graduate, .graduate-radio , .have-job , .have-exp{
+        margin-bottom: 5px;
+    }
+    .background{
+        width: 80%;
+    }
+    .title{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .background{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .background{
+        width: 70%;
     }
 }
