@@ -92,11 +92,6 @@
                 <button type="submit">أرسل</button>
             </form>
         </section>
-        <script>
-            var now = new Date();
-            now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
-            document.getElementById('dt').value = now.toISOString().slice(0,16);
-        </script>
     <script>
         var form = document.getElementById('sheetdb-form');
     form.addEventListener("submit", e=> {
