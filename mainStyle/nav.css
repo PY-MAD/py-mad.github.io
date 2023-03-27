@@ -17,7 +17,9 @@ body{
     background-size: cover;
     background-attachment: fixed;
     color: var(--color-text-light);
-    -webkit-backface-visibility: hidden;
+}
+.background{
+    display: none;
 }
 header{
     width: 100%;
