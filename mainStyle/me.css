@@ -33,9 +33,6 @@ a{
     font-size: 30px;
 }
 /* section style me */
-body{
-    overflow-y: hidden;
-}
 section{
     margin: 40px 0;
 }
