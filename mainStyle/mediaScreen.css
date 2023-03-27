@@ -5,6 +5,7 @@
     }
     nav{
         padding: 0;
+        margin: 0 30px;
     }
     nav a{
         font-size: 15px;
@@ -28,6 +29,7 @@
         padding: 0;
     }
     .card-link{
+        padding: 0;
         margin: 10px auto;
         transform: scale(85%);
     }

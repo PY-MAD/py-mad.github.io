@@ -36,6 +36,9 @@ a{
 /* themes-style */
 #suggistons-themes{
     background-image: url("img/background-seciton.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container{
     padding: 4% 10%;
