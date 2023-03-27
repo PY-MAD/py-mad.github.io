@@ -18,9 +18,6 @@ body{
     background-attachment: fixed;
     color: var(--color-text-light);
 }
-.background{
-    display: none;
-}
 header{
     width: 100%;
     height: 90vh;

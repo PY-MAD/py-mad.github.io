@@ -25,20 +25,20 @@
     }
     /* nav done */
     /* section themes */
-    .background{
-        font-family: "Almarai";
-        background-image: url("/img/background.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: var(--color-text-light);
+    body:before {
+        content: "";
+        display: block;
         position: fixed;
-        top: 0;
         left: 0;
+        top: 0;
         width: 100%;
         height: 100%;
-        z-index: 0;
-
+        z-index: -10;
+        background: url(../img/background.svg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     #suggistons-themes{
         width: 100%;
