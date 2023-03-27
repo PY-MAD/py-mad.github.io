@@ -34,8 +34,8 @@ a{
 }
 
 /* themes-style */
-#suggistons-themes{
-    background-image: url("img/background-seciton.svg");
+.title-topic{
+    margin-top: 50px;
 }
 .container{
     padding: 4% 10%;
@@ -87,7 +87,4 @@ a{
 }
 .card-light{
     color: var(--color-text-dark);
-}
-.dark-card{
-    background-color: var(--card-background-dark);
 }
