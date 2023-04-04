@@ -70,3 +70,6 @@ li:first-child{
 li{
     margin-right: 60px;
 }
+.degree{
+    text-align: start;
+}

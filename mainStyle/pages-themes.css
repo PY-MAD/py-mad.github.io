@@ -36,6 +36,9 @@ a{
     color: var(--color-text-light);
     background-color: var(--section-color);
 }
+.pd-bottom-pra{
+    padding-bottom: 5px;
+}
 body{
     background-color: var(--section-color);
 }
@@ -82,7 +85,96 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+}
+.background-change-path::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    filter: brightness(20%);
+    background-image: url("../img/change-the-lines.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-know-rosting::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    filter: brightness(20%);
+    background-image: url("../img/Custom-Coffee-Roaster-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-dripper-science::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    filter: brightness(20%);
+    background-image: url("../img/20211215-TAR_0224web_1024x.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-image-taste::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    filter: brightness(20%);
+    background-image: url("../img/XkMa2EQ5tvLlOJ8RtF1KspFyw7rtgUEzTXah4PWX.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-midWay::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    filter: brightness(20%);
+    background-image: url("../img/c2e0f3667fae623e8c279d0cc9f38f91_2048x2048.webp");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-drip-type::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    filter: brightness(20%);
+    background-image: url("../img/different-types-of-coffee-makers-explained.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .seven-lines{
     background-image: url("../img/images-7lines.jpg");
@@ -137,4 +229,16 @@ img{
 }
 .btn:hover{
     filter: brightness(90%);
+}
+p{
+    max-width: 50%;
+    margin: auto;
+}
+video{
+    width: 500px;
+}
+.long-pra{
+    width: 60%;
+    margin: auto;
+    padding: 10px 0px;
 }

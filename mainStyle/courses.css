@@ -34,6 +34,9 @@ a{
 }
 
 /* themes-style */
+#themes-topic{
+    height: 95vh;
+}
 .title-topic{
     margin-top: 50px;
 }
@@ -53,7 +56,7 @@ a{
 .img{
     width: 350px;
     height: 300px;
-    background-image: url("/img/thumb-68a-dl-roasting-beans-1080x1080.jpg");
+    background-image: url("/img/beans+blending.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,4 +90,22 @@ a{
 }
 .card-light{
     color: var(--color-text-dark);
+}
+
+.none-courses{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    font-size: 30px;
+}
+
+/* this for display one of them dives */
+.container{
+    
+}
+.none-courses{
+    display: none;
 }

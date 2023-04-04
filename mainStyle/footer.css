@@ -1,10 +1,9 @@
 .copyright{
     font-family: 'Almarai';
     font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 33px;
-    color: #F8F9FA;
-    text-shadow: 2px 1px 10px #F8F9FA;
+    color: #6C757D;
+    /* text-shadow: 2px 1px 10px #F8F9FA; */
     margin: 20px 0px;
 }
