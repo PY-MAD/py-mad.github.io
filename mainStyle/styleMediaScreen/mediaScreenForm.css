@@ -1,0 +1,12 @@
+@media screen and (max-width: 1024px) {
+    section{
+        height: 80vh;
+        margin-top: 120px;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    form{
+        transform: scale(80%);
+    }
+}

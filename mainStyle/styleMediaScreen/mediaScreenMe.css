@@ -1,0 +1,15 @@
+@media screen and (max-width: 500px) {
+    .title h1{
+        font-size: 20px;
+    }
+    .pra {
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    .include{
+        margin-bottom: 40px;
+    }
+    .include , .done{
+        width: 100%;
+    }
+}
