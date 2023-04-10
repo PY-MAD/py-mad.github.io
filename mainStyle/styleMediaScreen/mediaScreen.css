@@ -60,7 +60,7 @@
     }
     /* nav done */
     /* section themes */
-    body:before {
+    body::before {
         content: "";
         display: block;
         position: fixed;
