@@ -81,6 +81,15 @@ a{
     background-image: url("../img/different-types-of-coffee-makers-explained.jpg");
 
 }
+.image-Founding-advisor{
+    background-image: url("../img/0_Ek8YLFNQ6MXaOHn5.png");
+}
+.image-arabic-coffee{
+    background-image: url("../img/The-Arabic-Coffee-and-its-History-Who-to-Buy-It-From-Where-to-Enjoy-This-Drink-in-Dubai.jpg");
+}
+.image-chemical-reactions{
+    background-image: url("../img/shutterstock_1578232195-scaled.webp");
+}
 /* images done */
 .content-text .content-title{
     padding: 20px 0px;
