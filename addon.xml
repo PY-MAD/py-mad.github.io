@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="Skin.MAD" name="Mad Skin" version="1.0.0" provider-name="MAD">
+    <extension point="xbmc.addon.repository" name="Skin mad">
+        <dir>
+            <info compressed="false">https://skinmad.ourclasss.com/skin.MAD/addon.xml</info>
+            <datadir zip="true">https://skinmad.ourclasss.com/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>MAD SKIN</summary>
+        <description>MAD SKIN POWERFUL</description>
+    </extension>
+</addon>
