@@ -1,0 +1,16 @@
+:root{
+    --primary-color: #8E0E42;
+    --secondary-color: #CDCDCD;
+    --third-color: #D7C7A4;
+}
+@media screen and (max-width: 440px) {
+    .icon img{
+        width: 100px !important;
+    }
+    .get-title h1{
+        font-size: 20px;
+    }
+    .icon-social img{
+        width: 20px;
+    }
+}

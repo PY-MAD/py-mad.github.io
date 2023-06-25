@@ -1,0 +1,161 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #8E0E42;
+    --secondary-color: #CDCDCD;
+    --third-color: #D7C7A4;
+    --font-color-grey: #595959;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif;
+    color: var(--primary-color);
+}
+body{
+    background-color: #FFFFFF;
+}
+.none{
+    height: 200px;
+}
+/* ------------------------------------------ */
+.img img{
+    width: 200px;
+}
+.background-card{
+    position: relative;
+    margin: 20px 0px;
+}
+.card-container{
+    background-color: var(--primary-color);
+    height: 300px;
+    width: 250px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+.img img{
+    position: relative;
+    left: -110px;
+    width: 500px;
+}
+.our-products{
+    margin: 90px 0px;
+}
+.container{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+    
+}
+.small-card{
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background-color: var(--primary-color);
+    width: 120px;
+    height: 120px;
+    border-radius: 30px;
+}
+.small-card-right{
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    background-color: var(--primary-color);
+    width: 120px;
+    height: 120px;
+    border-radius: 30px;
+}
+.disc{
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
+    background: rgba(215, 199, 164, 0.49);
+    position: absolute;
+    padding: 10px 0;
+}
+.info{
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.info h1{
+    font-size: 16px;
+    width: 50%;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    text-align: center ;
+    align-items: center;
+}
+.price h3{
+    padding: 0;
+    margin: 0;
+}
+.price h4{
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 45px;
+}
+.long-title h1{
+    font-size: 14px;
+}
+.small-card-reserve{
+    position: absolute;
+    top: -30px;
+    left: -4px;
+    background-color: var(--primary-color);
+    width: 120px;
+    height: 120px;
+    border-radius: 30px;
+}
+.reserve{
+    color: white;
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    font-size: 20px;
+}
+.img-left img{
+    position: relative;
+    left: -170px;
+    width: 600px;
+}
+.semi-big img{
+    width: 450px;
+    left: -100px;
+}
+.big-img img{
+    width: 400px;
+    left: -70px;
+}
+.big-img-bakery img{
+    width: 470px;
+    left: -100px;
+}
+.biggest-img img{
+    width: 300px;
+    left: -22px;
+}
+.crt img{
+    width: 450px;
+    left: -100px;
+}
+.semi-crt img{
+    width: 470px;
+    left: -100px;
+}

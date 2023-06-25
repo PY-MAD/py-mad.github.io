@@ -1,0 +1,38 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0px 50px;
+}
+.footer{
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #D7C7A4 100%);
+}
+
+.icons{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 70px 0px;
+}
+.icons img{
+    width: 300px;
+}
+.hunger img{
+    width: 275px;
+}
+.footer .icon img{
+    width: 200px;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+.social img{
+    width: 30px;
+}
+.get-title{
+    max-width: 100%;
+}
