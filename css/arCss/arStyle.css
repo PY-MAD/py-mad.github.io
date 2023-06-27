@@ -27,12 +27,16 @@ body{
     color: var(--primary-color);
     font-size: 70px;
     position: absolute;
-    right: 521px;
-    top: 476px;
+    left: 105px;
+    top: 30px;
+    width: 400px;
 }
 .header img{
     position: relative;
     width: 30%;
+}
+.header-text{
+    position: absolute;
 }
 .card-container{
     background-color: var(--primary-color);

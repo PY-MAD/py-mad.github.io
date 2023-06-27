@@ -25,10 +25,9 @@
     }
     .header-text h1{
         direction: ltr;
-        right: 20px;
-        top: 479px;
+        right: -270px;
         font-size: 23px;
-        width: 30%;
+        width: 201px;
     }
     .card-container {
         width: 100px;

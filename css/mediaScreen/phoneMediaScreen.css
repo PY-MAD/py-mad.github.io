@@ -34,10 +34,9 @@
         width: 300px;
     }
     .header-text h1{
-        left: 278px;
-        top: 479px;
         font-size: 23px;
-        width: 26%;
+        width: 104px;
+        left: 70px;
     }
     .card-container {
         width: 100px;
