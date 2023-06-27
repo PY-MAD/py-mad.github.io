@@ -11,8 +11,14 @@
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, #FFFF 100%);
     z-index: 1;
 }
+.logo{
+    direction: rtl;
+}
+.right{
+    direction: ltr;
+}
 .logo img{
-    width: 200px;
+    width: 20%;
 }
 .nav{
     display: flex;
@@ -22,8 +28,13 @@
 }
 .pages a{
     text-decoration: none;
-    padding-right:20px ;
+    padding: 0 20px ;
     font-weight: 500;
+
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .pages{
     display: flex;

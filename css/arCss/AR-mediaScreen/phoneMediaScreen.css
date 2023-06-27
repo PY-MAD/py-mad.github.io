@@ -1,0 +1,62 @@
+:root{
+    --primary-color: #8E0E42;
+    --secondary-color: #CDCDCD;
+    --third-color: #D7C7A4;
+}
+@media screen and (max-width: 440px) {
+    /* nav bar */
+    body{
+        overflow-x: hidden;
+    }
+    .nav{
+        display: none;
+    }
+    .nav-phone{
+        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-phone .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .before-pages{
+        margin-top: 20px;
+    }
+    .nav-phone .pages{
+        font-size: 10px;
+    }
+    .side-menu-bar img{
+        width: 40px;
+    }
+    .img img{
+        width: 300px;
+    }
+    .header img{
+        width: 300px;
+    }
+    .header-text h1{
+        direction: ltr;
+        right: 20px;
+        top: 479px;
+        font-size: 23px;
+        width: 30%;
+    }
+    .card-container {
+        width: 100px;
+        height: 200px;
+    }
+    .title h1{
+        top: 100px;
+        font-size: 20px;
+        left: 200px;
+    }
+    .dis-section{
+        font-size: 15px;
+        max-width: 80%;
+    }
+    .icons img{
+        width: 100px;
+    }
+}
