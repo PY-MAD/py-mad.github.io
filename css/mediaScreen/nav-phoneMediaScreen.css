@@ -16,11 +16,11 @@
         align-items: center;
         margin-bottom: 30px;
     }
-    .pages{
-        width: 100%;
-    }
     .pages a{
         font-size: 12px;
+        padding: 0 5px;
+        display: flex;
+        justify-content: center;
     }
     .none{
         height: 200px;

@@ -8,19 +8,6 @@
     body{
         overflow-x: hidden;
     }
-    .nav{
-        display: none;
-    }
-    .nav-phone{
-        display: block;
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-phone .logo{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     .before-pages{
         margin-top: 20px;
     }

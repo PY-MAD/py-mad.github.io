@@ -8,9 +8,6 @@
     body{
         overflow-x: hidden;
     }
-    .nav{
-        display: none;
-    }
     .nav-phone{
         display: block;
         display: flex;
