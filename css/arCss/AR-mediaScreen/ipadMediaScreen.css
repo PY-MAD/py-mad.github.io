@@ -17,14 +17,8 @@
     .icons img{
         width: 85%;
     }
-    .container{
-        padding-right: 50px;
-    }
     .img img{
         right: -140px;
-    }
-    .title h1{
-        right: 100px;
     }
     .none{
         width: 100%;
@@ -47,14 +41,8 @@
     .icons img{
         width: 85%;
     }
-    .container{
-        padding-right: 50px;
-    }
     .img img{
         right: -140px;
-    }
-    .title h1{
-        right: 100px;
     }
     .none{
         width: 100%;
@@ -66,10 +54,11 @@
         width: 60%;
     }
     .header-text h1{
-        left: 70px;
+        left: 45px;
+        width: 308px;
     }
     .card-container{
-        max-width: 80%;
+        max-width: 100%;
     }
     .dis-section{
         max-width: 75%;
@@ -77,13 +66,7 @@
     .icons img{
         width: 85%;
     }
-    .container{
-        padding-right: 50px;
-    }
     .img img{
         right: -140px;
-    }
-    .title h1{
-        right: 100px;
     }
 }
