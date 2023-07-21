@@ -1649,3 +1649,18 @@ ul {
   padding-top: 40px;
   padding-bottom: -60px;
 }
+@media screen and (max-width: 480px){
+  .margin-0{
+    margin-left: 1%;
+  }
+  .list-padding-left{
+    padding-left: 0 !important;
+      margin-left: 0 !important;
+  }
+  .padding-left-0{
+    padding-left: 0;
+  }
+  .privacy_text{
+    margin: 0;
+  }
+}
