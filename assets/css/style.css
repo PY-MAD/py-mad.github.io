@@ -1666,4 +1666,8 @@ ul {
   .lists{
     margin-left: 0 !important;
   }
+  .sharedinfo{
+    margin-left: -30px;
+    padding-left: 0;
+  }
 }
