@@ -1654,7 +1654,7 @@ ul {
     margin-left: 1%;
   }
   .list-padding-left{
-    padding-left: 0 !important;
+      padding-left: 0 !important;
       margin-left: 0 !important;
   }
   .padding-left-0{
@@ -1662,5 +1662,8 @@ ul {
   }
   .privacy_text{
     margin: 0;
+  }
+  .lists{
+    margin-left: 0 !important;
   }
 }
