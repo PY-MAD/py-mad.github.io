@@ -1,0 +1,60 @@
+html{
+  scroll-behavior: smooth;
+}
+/* main css file */
+:root{
+  --primery-background-color: #0F1228;
+  --primery-background-color-tints: #272a3e;
+  --secndery-background-color: #FE6002;
+  --section-background-color:#E8E8E8;
+  --font-color: #EEEEEE;
+  --title-font-size: 40px;
+  --border-radius-cards : 20px;
+  --padding-top-section: 60px;
+}
+*{
+  /* main font Fmaily */
+  font-family: "Changa", sans-serif;
+  text-decoration: none;
+}
+body{
+  background-color: var(--section-background-color);
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primery-background-color);
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: var(--secndery-background-color);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  

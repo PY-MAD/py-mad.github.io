@@ -1,0 +1,120 @@
+html{
+    scroll-behavior: smooth;
+}
+/* main css file */
+:root{
+    --primery-background-color: #0F1228;
+    --secndery-background-color: #FE6002;
+    --section-background-color:#E8E8E8;
+    --font-color: #EEEEEE;
+    --title-font-size: 40px;
+    --border-radius-cards : 20px;
+    --padding-top-section: 60px;
+}
+*{
+    /* main font Fmaily */
+    font-family: "Changa", sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: var(--section-background-color);
+}
+
+/* Scroll bar Custmize */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--primery-background-color), var(--secndery-background-color));
+    border-radius: 0 0px 10px 10px;
+}
+
+/* Content Sytyles */
+.active-page{
+    color: var(--secndery-background-color);
+    font-weight: 600;
+    /* font-size: 19px; */
+}
+section{
+    min-height: 100vh;
+    /* overflow: hidden; */
+}
+.main{
+    direction: ltr; 
+}
+
+#calendar{
+    height: 100%;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    -webkit-box-shadow: 0 10px 50px -20px var(--secndery-background-color);
+    box-shadow: 0 10px 50px -20px var(--primery-background-color);
+}
+button.icon-button>span.bars{
+    margin-bottom: 6px;
+}
+/* edit for point event */
+.event-indicator{
+    margin-top: 6px;
+}
+/* edit side bar for calander */
+.calendar-sidebar{
+    background-color: var(--primery-background-color);
+    -webkit-box-shadow: 5px 0 18px -3px var(--secndery-background-color);
+    box-shadow: 0 10px 50px -20px var(--primery-background-color);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.calendar-sidebar>.month-list>.calendar-months>li.active-month , .calendar-sidebar>.month-list>.calendar-months>li:hover{
+    background-color: var(--secndery-background-color);
+}
+/* burger background icon */
+.calendar-sidebar>span#sidebarToggler{
+    background-color: var(--primery-background-color);
+    box-shadow: 0 10px 50px -20px var(--primery-background-color);
+}
+th[colspan="7"]{
+    color: var(--secndery-background-color);
+}
+tr.calendar-header .calendar-header-day{
+    color: var(--secndery-background-color);
+}
+/* message side bar */
+.event-list>.event-empty{
+    border: 1px solid var(--primery-background-color);
+    background-color: #0f122852;
+}
+.event-list>.event-empty>p{
+    color: var(--primery-background-color);
+}
+.event-container>.event-info>p.event-title>span{
+    color: var(--primery-background-color);
+    border: 1px solid var(--primery-background-color);
+    background-color: #0f122852;
+
+}
+/* to edit for arrow top right */
+#eventListToggler{
+    background-color: var(--primery-background-color);
+    box-shadow: 0 10px 50px -20px var(--primery-background-color);
+}
+
+
+
+/* edit header */
+.title , .title h1 , .title p{
+    text-align: center;
+    color: var(--primery-background-color);
+    margin-top: 3%;
+}
+.title p{
+    font-size: 20px;    
+    font-weight: 500;
+    margin-top: 1%;
+}

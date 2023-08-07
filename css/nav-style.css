@@ -1,0 +1,93 @@
+:root{
+    --primery-background-color: #0F1228;
+    --secndery-background-color: #FE6002;
+    --font-color: #EEEEEE;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--font-color);
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+}
+/* Content Sytyles */
+.active-page{
+    color: var(--secndery-background-color) !important;
+    font-weight: 600;
+    /* font-size: 19px; */
+}
+
+.nav-bar{
+    width: 100%;
+    background-color: var(--primery-background-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px 0px;
+}
+.pages ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pages li{
+    margin: 0 20px;
+    list-style: none;
+}
+.pages a{
+    text-decoration: none;
+    color: white;
+}
+.pages a:hover{
+    color: var(--secndery-background-color) ;
+    transition: .3s;
+}
+.logo{
+    text-align: center;
+    cursor: pointer;
+}
+.logo h1{
+    font-size: 25px;
+}
+.logo p{
+    font-size: 5px;
+    filter: opacity(0.7);
+}
+.container{
+    padding: 5px;
+}
+.search-bar{
+    position: relative;
+}
+.search-bar input{
+    border-radius: 30px;
+    padding: 5px;
+    color: black;
+    padding-right: 15px;
+    outline: none;
+    border: none;
+    transition: .5s;
+    
+}
+.search-bar input:focus{
+    box-shadow: 0  0 5px 2px var(--secndery-background-color);
+
+}
+.search-bar input::placeholder{
+    padding-right: 10px;
+}
+
+nav .search-bar i{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    cursor: pointer;
+    color: #333;
+}
