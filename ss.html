@@ -4,76 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/lib/evo-calendar/css/evo-calendar.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/lib/evo-calendar/css/evo-calendar.royal-navy.min.css"/>
     <title>Document</title>
 </head>
 <style>
-    .container-missing-account{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;    
-    }
-    .card{
-        background-color: #F3722C;
-        border-radius: 20px;
-    }
-    .content{
-        display: flex;
-        align-items: center;
-        padding: 2rem 2rem;
-        justify-content: space-between;
-    }
-    .text{
-        direction: rtl;
-        color: white;
-    }
-    .big-font{
-        font-size: 36px;
-        font-weight: 700;
-    }
-    .middle-font{
-        margin: 2rem 0;
-        font-size: 16px;
-    }
-    .link-sign{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #4D9DE0;
-        width: 140px;
-        height: 26px;
-        border-radius: 6px;
-        transition: 0.3s;
-        -webkit-user-select: none;
-        -webkit-touch-callout: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-    .link-sign:hover{
-        filter:brightness(0.80);
-    }
-
+        .show-article{
+            min-height: 70vh;
+            background-color: beige;
+        }
 </style>
 <body>
-    <div class="container-missing-account">
-        <div class="card">
-            <div class="content">
-                <div class="missing-account-img">
-                    <img src="/assets/svg/missing-account.min.svg" alt="">
-                </div>
-                <div class="text">
-                    <div class="big-font">
-                        أهلًا بصديقنا
-                    </div>
-                    <div class="middle-font">
-                                نتوقع أنك مو مسجل دخول في منصتنا <br>الرجاء التسجيل للإستفادة من كامل خدماتنا
-                    </div>
-                    <a class="link-sign">التسجيل</a>
-                </div>
-            </div>
-        </div>
+    <div>
+        <input type="text" id="titleText" placeholder="title">
+        <textarea name="dsad" id="inputArea" cols="30" rows="10"></textarea>
+        <input type="button" id="send" value="send">
     </div>
-</body>
+    <div class="show-article">
+        <div class="title" id="title"></div>
+        <div class="textera" id="textera"></div>
+    </div>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+
+import { getDatabase, ref,onValue, child, get, set } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+import { getAuth,onAuthStateChanged,signOut } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyAPs6u-21i0E9mxGXWhdlFiCKpkuhrPpBc",
+    authDomain: "test-ab03a.firebaseapp.com",
+    databaseURL: "https://test-ab03a-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "test-ab03a",
+    storageBucket: "test-ab03a.appspot.com",
+    messagingSenderId: "19444872261",
+    appId: "1:19444872261:web:69de8c91e006b58aa8df2c"
+};
+
+
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app)
+const auth = getAuth();
+let uniqId = new Date().getTime();
+
+send.addEventListener("click",()=>{
+    let title = document.getElementById("titleText").value;
+let area = document.getElementById("inputArea").value;
+let send = document.getElementById("send")
+    set(ref(database, `/blog/${uniqId}`),{
+        title: title,
+        blogText:area,
+    })
+})
+let titleView = document.getElementById("title")
+let area = document.getElementById("textera")
+get(ref(database , "/blog/")).then((data)=>{
+    let s = data.val()
+    for(let i in s){
+        let t = s[i].title;
+        let ar = s[i].blogText
+        console.log(ar)
+        titleView.innerText = t;
+        area.innerText += ar
+    }
+})
+
+
+
+</script>
 </html>
