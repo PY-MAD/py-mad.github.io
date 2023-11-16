@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- style css -->
+            <link rel="stylesheet" href="../mainStyle/nav.css">
+            <link rel="stylesheet" href="../mainStyle/footer.css">
+            <link rel="stylesheet" href="../mainStyle/sign.css">
+            <link rel="stylesheet" href="../mainStyle/styleMediaScreen/mediaScreenThemes.css">
+            <!-- link fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <title>طارق بن محمود | وصفاتي</title>
+</head>
+<body class="phone-x" style="background: #212529;">
+    <header id="header" style="height: 100%;">
+        <nav id="navBar">
+            <a href="themes.html">المواضيع</a>
+            <a href="https://haikuminibar.com/">المتجر</a>
+            <a class="home" href="../index.html">الرئيسية</a>
+            <a href="courses.html">الدورات</a>
+            <a href="me.html">عني</a>
+            <a href="signIn.html">تسجيل الدخول</a>
+        </nav>
+    </header>
+    <section class="main">
+            <div class="top">
+                <div class="logIn-btn">
+                    <button class="btn btn-active" id="login">تسجيل الدخول</button>
+                </div>
+                <div class="register-btn">
+                    <button class="btn" id="reg">تسجيل</button>
+                </div>
+            </div>
+            <div class="form">
+                <form id="login-sec" class="login-sec active-section">
+                    <div class="email">
+                        <input id="login-email" type="email" placeholder="أدخل إيميلك"/>
+                    </div>
+                    <div class="password">
+                        <input id="login-password" type="password" placeholder="أدخل الرقم السري"/>
+                    </div>
+                    <div class="btn-signIn">
+                        <button id="signIn">تسجيل الدخول</button>
+                    </div>
+                </form>
+                <form id="reg-sec" class="reg-sec">
+                    <div class="name">
+                        <input id="name" type="text" placeholder="أدخل أسم"/>
+                    </div>
+                    <div class="email">
+                        <input id="reg-email" type="email" placeholder="أدخل إيميلك"/>
+                    </div>
+                    <div class="password">
+                        <input id="reg-pass" type="password" placeholder="أدخل الرقم السري"/>
+                    </div>
+                    <div class="btn-signIn">
+                        <button id="signUp">تسجيل</button>
+                    </div>
+                </form>
+            </div>
+    </section>
+</body>
+<script src="/js/signin.js" type="module"></script>
+</html>
