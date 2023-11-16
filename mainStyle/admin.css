@@ -1,0 +1,430 @@
+:root{
+    --color-text-light: #F8F9FA;
+    --color-text-dark: #293642;
+    --section-color: #212529;
+    --card-background-light: #f7f8f9;
+    --card-background-dark: #6C757D;
+    --color-white-card: rgba(255, 255, 255, 0.80);
+    --shadow-ligher: 0px 0px 10px 0px #FFF;
+    --input-color: #41474D;
+    --timer-circle: 0%;
+    --circle-blur: #f8f9fa89;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Almarai";
+}
+body{
+    transition: 0.3s ease-out;
+}
+a{
+    text-decoration: none;
+    color: var(--color-text-dar);
+}
+
+main{
+    display: flex;
+    direction: rtl;
+    padding: 5% 10%;
+}
+main aside{
+    width: 100%;
+}
+aside div{
+    padding-bottom: 10%;
+    font-size: 30px;
+}
+main section{
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    direction: ltr;
+}
+.card-container{
+    background-color: var(--color-white-card);
+    width: 240px;
+    min-height: 240px;
+    max-height: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-ligher);
+    margin: 40px;
+    transition: 0.3s;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-dark);
+}
+.card-content .name-of-recipe{
+    font-weight: bold;
+    padding: 12px 0px;
+}
+.weight , .numberOfDrips , .temp, .timeOfEnd{
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    width: 80%;
+    padding-bottom: 20px;
+}
+.number{
+    font-weight: 600;
+    display: flex;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    direction: rtl;
+}
+.temp-number{
+    direction: ltr;
+}
+.btn .start , .btn .edit{
+    padding: 8px 12px;
+    border: 0;
+    font-weight: 500;
+    border-radius: 12px;
+    
+}
+.start{
+    background-color: var(--color-text-dark);
+    color: white;
+    transition: 0.4s;
+    text-align: center;
+}
+.edit{
+    background-color: #CC3300;
+    color: white;
+    transition: 0.4s;
+}
+.start:hover , .edit:hover{
+    filter: drop-shadow(0px 0px 8px black);
+}
+.addes{
+    width: 100%;
+    height: 100%;
+}
+.add-active{
+        width: 500px;
+        height: 700px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+        background-color: #FFF ;
+        transition: 0.3s;
+        padding: 3%;
+        border-radius: 12px;
+}
+
+.dark-background{
+    background-color: rgba(0, 0, 0, 0.350);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
+.form-add-recipe input{
+    background-color: var(--input-color);
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    direction: rtl;
+    margin-bottom: 1rem;
+    color: white !important;
+    text-align: center;
+    border-radius: 8px;
+}
+.weight{
+    width: 100%;
+}
+input:focus{
+    outline: none;
+}
+.times{
+    display: flex;
+}
+.time{
+    direction: rtl;
+    color: var(--input-color);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.time select{
+    width: 140px;
+    font-size: 14px;
+    background-color: var(--input-color);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+}
+.times{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+input::placeholder{
+    text-align: center;
+}
+.drips div input{
+    width: max-content;
+}
+.drips div{
+    display: flex;
+    justify-content: space-around;
+    direction: rtl;
+}
+.save-ricpe button , .cancel-ricpe button{
+    width: 100%;
+    border: 0;
+    padding: 12px 6px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    color: white;
+}
+.save-ricpe button{
+    background-color: #69A054;
+}
+.cancel-ricpe button{
+    background-color: #B2533E;
+}
+.add-unactive{
+    display: none;
+}
+.adds-img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.adds-img div{
+    font-size: 24px;
+    font-weight: bold;
+}
+.start button{
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+.start{
+    width: 60%;
+    padding: 5px 0px;
+    border-radius: 7px;
+}
+.content-rcipe div{
+    display: flex;
+    direction: rtl;
+    justify-content: space-between;
+}
+.titleRicpe{
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.content-rcipe{
+    margin-bottom: 1rem;
+    width: 140%;
+}
+.content-rcipe div{
+    margin-bottom: .5rem;
+}
+.text-temp .number{
+    direction: ltr;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#start-ricpe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--section-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+.circle{
+    background-color: #69A054;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: 700;
+    cursor: default;
+    user-select: none;
+}
+.content-recipe{
+    width: 20%;
+}
+.start-str{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    direction: rtl;
+    border-bottom: 1px solid white;
+    padding-bottom: 1.5%;
+    margin-bottom: 2rem;
+}
+.active-start{
+    display: flex !important;
+}
+.prograess-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background: 
+    radial-gradient(closest-side, var(--section-color) 79%, transparent 80% 100%),
+    conic-gradient(var(--card-background-light) var(--timer-circle), var(--card-background-dark) 0);
+    transition: 0.8s;
+
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transition: 2s conic-gradient;
+}
+
+.progress-bar{
+    font-size: 80px;
+}
+
+
+
+#started{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--section-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    direction: rtl;
+    display: none;
+}
+#next{
+    position: absolute;
+    right: 0px;
+    font-size: 120px;
+}
+.content-started{
+    text-align: center;
+}
+.content-started .progress-bar{
+    margin-bottom: 10rem;
+}
+.content-started .drip{
+    font-size: 50px;
+    font-weight: bold;
+}
+.content-started .drip-num{
+    margin-top: 4rem;
+    font-size: 50px;
+    font-weight: bold;
+}
+.total-drip{
+    margin-top: 2rem;
+}
+.total-drip, .total-drip-num{
+    font-size: 30px;
+}
+.sections{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    width: 97.5%;
+    direction: ltr;
+}
+.circle-bar{
+    margin-left: 2rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--circle-blur);
+}
+.acitve-circle{
+    background-color: var(--card-background-light);
+}
+.bon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bon img{
+    width: 40%;
+}
+.bon h1{
+    margin-top: 10%;
+    font-size: 60px;
+    font-weight: bold;
+}
+.d-none{
+    display: none;
+}
+
+
+@media screen and (max-width:450px) {
+    aside{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    #start-ricpe{
+        flex-direction: column;
+    }
+    .start-recipe{
+        order: 2;
+    }
+    .content-recipe{
+        order: 1;
+        width: 80%;
+    }
+    #start-ricpe , #started{
+        height: 110vh;
+        padding-top: 10%;
+    }
+    .circle , .prograess-number{
+        width: 250px;
+        height: 250px;
+        font-size: 35px;
+    }
+    div#circle-bar-secitons{
+        bottom: auto;
+        left: -8px;
+    }
+}

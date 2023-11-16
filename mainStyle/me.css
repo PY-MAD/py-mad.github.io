@@ -1,0 +1,75 @@
+:root{
+    --color-text-light: #F8F9FA;
+    --color-text-dark: #293642;
+    --section-color: #212529;
+    --card-background-light: #f7f8f9;
+    --card-background-dark: #6C757D;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Almarai";
+}
+a{
+    text-decoration: none;
+    color: var(--color-text-dar);
+}
+.d-flex{
+    display: flex;
+}
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.font-big{
+    font-size: 30px;
+}
+/* section style me */
+section{
+    margin: 40px 0;
+}
+.avatar{
+    background-color: var(--card-background-light);
+    background-image: url("../img/thumb-68a-dl-roasting-beans-1080x1080.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+.social-media img{
+    margin: 20px 0px;
+    width: 28px;
+}
+.name{
+    font-weight: bold;
+}
+.info div{
+    margin: 20px 0px;
+}
+.info .pra{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+}
+ul ,li{
+    text-align: start;
+}
+li:first-child{
+    margin-top: 20px;
+}
+li{
+    margin-right: 60px;
+}
+.degree{
+    text-align: start;
+}

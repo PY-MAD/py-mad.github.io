@@ -1,0 +1,82 @@
+:root{
+    --color-text-light: #F8F9FA;
+    --color-text-dark: #293642;
+    --section-color: #212529;
+    --card-background-light: #f7f8f9;
+    --card-background-dark: #6C757D;
+    --color-white-card: rgba(255, 255, 255, 0.80);
+    --shadow-ligher: 0px 0px 10px 0px #FFF;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Almarai";
+}
+a{
+    text-decoration: none;
+    color: var(--color-text-dar);
+}
+button{
+    border: 0;
+}
+.top{
+    display: flex;
+    direction: rtl;
+}
+.btn{
+    padding: 9px 12px;
+    margin: 0 12px;
+    border-radius: 5px;
+    background-color: var(--card-background-light);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.btn:hover{
+    filter: brightness(0.7);
+}
+.btn-active{
+    filter: brightness(0.7);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.form{
+    direction: rtl;
+    width: 30%;
+    margin-top: 3%;
+    position: relative;
+}
+.reg-sec, .login-sec{
+    position: absolute;
+    top:0;
+    width: 100%;
+    display: none;
+}
+.active-section{
+    display: block;
+}
+.email input, .password input , .name input{
+    width: 100%;
+    padding: 12px 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 0;
+    font-weight: bold;
+}
+input:focus{
+        outline: none;
+}
+.btn-signIn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.btn-signIn button{
+    padding: 10px 12px;
+}

@@ -1,0 +1,97 @@
+@media screen and (max-width:1024px) {
+    header{
+        width: 100%;
+    }
+    nav{
+        padding: 0;
+        margin: 0 30px;
+    }
+    nav a{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        padding: 0;
+        margin: 0;
+    }
+    #suggistons-themes{
+        width: 100%;
+        height: 100%;
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .card-link{
+        padding: 0;
+        margin: 10px auto;
+        transform: scale(80%);
+    }
+    .card-link:hover{
+        transform: scale(85%);
+    }
+}
+@media screen and (max-width: 500px) {
+    header{
+        width: 100%;
+    }
+    nav{
+        padding: 0;
+        margin: 0 30px;
+    }
+    nav a{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        padding: 0;
+        margin: 0;
+    }
+    .title h1{
+        font-size: 26px;
+    }
+    .title h5{
+        font-size: 15px;
+    }
+    /* nav done */
+    /* section themes */
+    body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url(../img/background.svg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #suggistons-themes{
+        width: 100%;
+        height: 100%;
+    }
+    .container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .card-link{
+        padding: 0;
+        margin: 10px auto;
+        transform: scale(85%);
+    }
+    .card-link:hover{
+        transform: scale(95%);
+    }
+    .phone-x{
+        overflow-x: hidden;
+    }
+}

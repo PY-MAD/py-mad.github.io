@@ -1,0 +1,125 @@
+:root{
+    --color-text-light: #F8F9FA;
+    --color-text-dark: #293642;
+    --section-color: #212529;
+    --card-background-light: #f7f8f9;
+    --card-background-dark: #6C757D;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Almarai";
+}
+a{
+    text-decoration: none;
+    color: var(--color-text-dar);
+}
+.d-flex{
+    display: flex;
+}
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.font-big{
+    font-size: 30px;
+}
+
+/* themes-style */
+.title-topic{
+    margin-top: 50px;
+}
+.container{
+    padding: 4% 10%;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.card-container{
+    margin: 20px 0px;
+    height: 500px;
+    width: 350px;
+    background-color: var(--card-background-light);
+    border-radius: 10px;
+}
+.img{
+    width: 350px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+/* images */
+.seven-lines{
+    background-image: url("../img/images-7lines.jpg");
+}
+.image-change-lines{
+    background-image: url("../img/change-the-lines.jpg");
+}
+.image-know-theRostaing{
+    background-image: url("../img/Custom-Coffee-Roaster-2.jpg");
+}
+.image-drip-coffee{
+    background-image: url("../img/20211215-TAR_0224web_1024x.webp");
+}
+.image-taste-coffee{
+    background-image: url("../img/XkMa2EQ5tvLlOJ8RtF1KspFyw7rtgUEzTXah4PWX.jpg");
+}
+.image-midWay{
+    background-image: url("../img/c2e0f3667fae623e8c279d0cc9f38f91_2048x2048.webp");
+}
+.image-list-coffee-dripper{
+    background-image: url("../img/different-types-of-coffee-makers-explained.jpg");
+
+}
+.image-Founding-advisor{
+    background-image: url("../img/0_Ek8YLFNQ6MXaOHn5.png");
+}
+.image-arabic-coffee{
+    background-image: url("../img/The-Arabic-Coffee-and-its-History-Who-to-Buy-It-From-Where-to-Enjoy-This-Drink-in-Dubai.jpg");
+}
+.image-chemical-reactions{
+    background-image: url("../img/shutterstock_1578232195-scaled.webp");
+}
+.image-road-rost{
+    background-image: url("../img/road-rost.png");
+}
+/* images done */
+.content-text .content-title{
+    padding: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content-text .pra{
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.content-text{
+    text-align: center;
+}
+.card-link{
+    transition: 0.3s;
+    padding: 0 3%;
+}
+.card-link:hover{
+    transform: scale(105%) ;
+    filter: brightness(80%);
+}
+.title-suggistons{
+    padding-top: 20px;
+    color: var(--color-text-light);
+}
+.card-light{
+    color: var(--color-text-dark);
+}
