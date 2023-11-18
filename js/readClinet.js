@@ -20,23 +20,11 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const database = getDatabase(app);
-const auth = getAuth(app);
 
-auth.onAuthStateChanged((user)=>{
-    let uid = user.uid;
-    get(ref(database, `/users/`)).then((snap)=>{
-        let data = snap.val();
-        let name = "";
-        for(let i in data){
-            if(uid == data[i].uid){
-                name = data[i].name       
-            }
-        }
-        get(ref(database, `/recipe/${name}`)).then((snap)=>{
-            let data = snap.val()
-            let continer = document.querySelector(".container")
-            function addCard(title , weight , temp , timeOfEnd ,id){
-                let q = `
+        get(ref(database, `/recipe/`)).then((snap) => {
+          let continer = document.querySelector(".container");
+          function addCard(title, weight, temp, timeOfEnd, id) {
+            let q = `
                         <div class="card-container">
                             <div class="card-content">
                                 <div class="titleRicpe">${title}</div>
@@ -59,18 +47,35 @@ auth.onAuthStateChanged((user)=>{
                                 <button >إبدا الوصفة</button>
                             </div>
                         </div>
-                `
-                return continer.innerHTML += q;
-            }
-            for(let i in data){
-                let id = i;
-                let title = data[i].nameOFRicpe;
-                let weight = data[i].weight;
-                let temp = data[i].tempDgree;
-                let timeOfEnd = data[i].totalTime;
-                addCard(title , weight , temp , timeOfEnd, id);
-                
-            }
-        })
-    })
-})
+                `;
+            return continer.innerHTML += q;
+          }
+          function addOwner(name){
+            let q =
+            `
+            <div class="ownerName">
+                ${name}
+            </div>
+            `
+            return continer.innerHTML += q;
+          }
+          let data = snap.val()
+          for(let i in data){
+            get(ref(database, `/recipe/${i}`)).then((snap)=>{
+                    addOwner(i)
+                    let data = snap.val();
+                    for (let i in data) {
+                      let id = i;
+                      let title = data[i].nameOFRicpe;
+                      let weight = data[i].weight;
+                      let temp = data[i].tempDgree;
+                      let timeOfEnd = data[i].totalTime;
+                      addCard(title, weight, temp, timeOfEnd, id);
+                    }
+
+            })
+            
+            
+          }
+
+        });

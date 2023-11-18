@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- style css -->
+            <link rel="stylesheet" href="../mainStyle/nav.css">
+            <link rel="stylesheet" href="../mainStyle/footer.css">
+            <link rel="stylesheet" href="../mainStyle/admin.css">
+            <link rel="stylesheet" href="../mainStyle/styleMediaScreen/mediaScreenThemes.css">
+            <!-- link fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>طارق بن محمود | الوصفات</title>
+</head>
+<body class="phone-x" style="background: #212529;">
+    <header id="header" style="height: 100%;">
+        <nav id="navBar">
+            <a href="themes.html">المواضيع</a>
+            <a href="https://haikuminibar.com/">المتجر</a>
+            <a class="home" href="../index.html">الرئيسية</a>
+            <a href="courses.html">الدورات</a>
+            <a href="me.html">عني</a>
+            <a href="signIn.html">تسجيل الدخول</a>
+        </nav>
+    </header>
+    <main>
+        <section class="" id="recipe">
+                    <div class="container">
+                    </div>
+        </section>
+    </main>
+    <section id="start-ricpe">
+            <div id="exit-start-ricpe" class="exit-icons">
+                <i class="bi bi-x-lg"></i>
+            </div>
+            <div class="space"></div>
+            <div class="start-recipe">
+                <div class="circle">
+                    إبدا
+                </div>
+            </div>
+            <div class="content-recipe"></div>
+    </section>
+    <section id="started">
+        <div id="exit-started" class="exit-icons">
+            <i class="bi bi-x-lg"></i>
+        </div>
+        <div id="next" style="display: none;">
+            <i class="bi bi-caret-right-fill"></i>
+        </div>
+        <div class="content-started">
+            <div class="progress-bar">
+                <div class="" id="i" style="display: none;"></div>
+                <div class="prograess-number" id="prograess-number">00:00</div>
+                <progress value="100" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+            </div>
+            <div id="holder">
+
+            </div>
+            <div class="sections" id="circle-bar-secitons">
+                <div class="circle-bar acitve-circle" id="1"></div>
+            </div>
+        </div>
+        <div class="bon d-none" id="bon-appetit">
+            <img src="/img/vecteezy_emoji-face-savouring-delicious-food-smiling-face-savoring_22932684.webp" alt="">
+            <h1>بالف عافيه عليك</h1>
+        </div>
+    </section>
+</body>
+<script src="/js/database/db.js" type="module"></script>
+<script src="/js/readClinet.js" type="module"></script>
+<script src="/js/start.js" type="module"></script>
+<script src="/js/start-timer.js" type="module"></script>
+<!-- Moment.js library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<!-- moment-duration-format plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-duration-format/1.3.0/moment-duration-format.min.js"></script>
+</html>

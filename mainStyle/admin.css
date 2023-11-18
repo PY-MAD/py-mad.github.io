@@ -402,7 +402,13 @@ input::placeholder{
     left: 40px;
     cursor: pointer;
 }
-
+.ownerName{
+    direction: rtl;
+    width: 100%;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
 @media screen and (max-width:450px) {
     aside{
         display: none;
