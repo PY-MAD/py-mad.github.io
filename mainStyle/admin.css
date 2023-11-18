@@ -419,10 +419,9 @@ input::placeholder{
     .content-recipe{
         order: 1;
         width: 80%;
-        margin-top: 30%;
+        margin-top: 50%;
     }
     #start-ricpe , #started{
-        height: 110vh;
         padding-top: 10%;
     }
     .circle , .prograess-number{
@@ -431,8 +430,10 @@ input::placeholder{
         font-size: 35px;
     }
     div#circle-bar-secitons{
-        bottom: auto;
-        left: -8px;
+        bottom: 30px;
+    }
+    .progress-bar{
+        margin-bottom: 0 !important;
     }
     .add-active {
         width: 350px;
@@ -451,5 +452,15 @@ input::placeholder{
     }
     .drips div input {
         width: 100%;
+    }
+    div#circle-bar-secitons {
+        bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 20%;
+    }
+    .circle-bar{
+        margin-left: 0;
     }
 }
