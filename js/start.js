@@ -34,16 +34,25 @@ auth.onAuthStateChanged((user)=>{
                 }
             }
             setTimeout(() => {
-                let start = document.querySelectorAll(".start button");
+                let start = document.querySelectorAll(".start");
                 console.log(start)
                 start.forEach((item)=>{
                     item.addEventListener("click",()=>{
+                        let main = document.querySelector("main")
+                        main.style.display ="none"
+                        let exit = document.querySelector("#exit-start-ricpe");
+
                         let id = item.id;
                         get(ref(database, `/recipe/${OwnerName}/${id}`)).then((snap)=>{
                             let data = snap.val()
                             let content = document.querySelector(".content-recipe")
+                            exit.addEventListener("click",()=>{
+                                content.innerHTML = " "
+                                document.getElementById("start-ricpe").classList.remove("active-start")
+                                main.style.display ="flex"
+                            })
                             function recipe(ownerRicpe , name , temp,weight , timeOfEnd , dirpsCount){
-
+                                content.innerHTML = " "
                                 let q = `
                                     
                                         <div class="owner-recipe-start start-str">

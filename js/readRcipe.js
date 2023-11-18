@@ -54,8 +54,8 @@ auth.onAuthStateChanged((user)=>{
                                     </div>
                                 </div>
                             </div>
-                            <div class="start">
-                                <button  id="${id}">إبدا الوصفة</button>
+                            <div class="start" id="${id}">
+                                <button >إبدا الوصفة</button>
                             </div>
                         </div>
                 `

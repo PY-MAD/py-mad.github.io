@@ -34,6 +34,7 @@ function addCir(i){
     return cirSec.innerHTML += q;
 }
 function addSteps(i , dirp){
+    holder.innerHTML = " "
     let q =`
     <div class="start-sec">
         <div class="drip">الصبة رقم ${i}</div>
@@ -72,10 +73,17 @@ function startTimer(endTime, total)
         if(t.textContent == `${endT}`){
             console.log("we stop now");
             document.querySelector("#i").textContent = i;
+            document.querySelector("#next").style.display="block"
             clearInterval(timer);
             
             
         }
+        let exit = document.querySelector("#exit-started")
+        exit.addEventListener("click",()=>{
+            document.getElementById('prograess-number').textContent = "00:00"
+            updateProgressBar(0)
+            clearInterval(timer)
+        })
     }, 1000);
 }
 function continueTimer(curr, total){
@@ -103,19 +111,27 @@ function continueTimer(curr, total){
         let pr = (i / total) * 100;
         updateProgressBar(pr);
         
-
+        
         if(t.textContent == `${curr}`){
             console.log("we stop now");
             document.querySelector("#i").textContent = i;
+            document.querySelector("#next").style.display="block"
             clearInterval(timers)
             
             
         }
+        let exit = document.querySelector("#exit-started")
+        exit.addEventListener("click",()=>{
+            document.getElementById('prograess-number').textContent = "00:00"
+            updateProgressBar(0)
+            clearInterval(timers)
+        })
     },1000)
 }
 
 start.addEventListener("click",()=>{
     let startSec = document.getElementById("started")
+    document.querySelector("#start-ricpe").classList.remove("active-start")
     startSec.classList.add("active-start")
     let count = document.querySelector(".countDrips-recipe-start .name").textContent;
     let owner = document.querySelector(".owner-recipe-start .name").textContent;
@@ -155,6 +171,7 @@ start.addEventListener("click",()=>{
             timer+=parseInt(wait[0])
             
             next.addEventListener("click",()=>{
+                document.querySelector("#next").style.display="none"
                 ++i;
                 console.log(curr)
                 if(i <= count){
@@ -180,6 +197,15 @@ start.addEventListener("click",()=>{
                     document.querySelector("#next").classList.add("d-none")
                     document.querySelector(".bon").classList.remove("d-none")
                 }
+            })
+            let exit = document.querySelector("#exit-started")
+            let main = document.querySelector("main")
+            exit.addEventListener("click",()=>{
+                holder.innerHTML = " "
+                cirSec.innerHTML = " "
+                document.getElementById("start-ricpe").classList.remove("active-start")
+                document.getElementById("started").classList.remove("active-start")
+                main.style.display ="flex"
             })
     
         })
