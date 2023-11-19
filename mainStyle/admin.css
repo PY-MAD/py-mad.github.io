@@ -425,7 +425,7 @@ input::placeholder{
     .content-recipe{
         order: 1;
         width: 80%;
-        margin-top: 50%;
+        padding-top: 30%;
     }
     #start-ricpe , #started{
         padding-top: 10%;
@@ -444,17 +444,8 @@ input::placeholder{
     .add-active {
         width: 350px;
         height: max-content;
-        position: absolute;
         top: 50%;
         left: 47%;
-        transform: translate(-50%,-50%);
-        display: flex;
-        flex-direction: column;
-        z-index: 999;
-        background-color: #FFF;
-        transition: 0.3s;
-        padding: 3%;
-        border-radius: 12px;
     }
     .drips div input {
         width: 100%;
